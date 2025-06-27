@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Projet/Css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="accueil">
+            <img src="/Projet/photo/logo/logo-transparent.png" alt="logo">
+             <nav class="navbar">
+                <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="/Projet/html/Accueil.html">Accueil</a></li>
+                    <li><a href="/Projet/html/voiture.html">Voitures</a></li>
+                    <li><a href="/Projet/html/moto.html">Moto</a></li>
+                    <li><a href="/Projet/html/Contact.html">Contacts</a> </li>
+                </ul>
+               </div>
+            </nav> 
+           
+        <img src="/Projet/photo/icone/menu.png" alt=menu class="menu-hamburger" id="menu-toggle">
+    </header>
+     <main class="categorie">
+    <h2>Catégorie : Moteur & Pièces Mécaniques</h2>
+
+    <div class="produits-liste">
+
+        <div class="produit">
+            <img src="/Projet/photo/icone/filtre.png" alt="Moteur complet 1.6L">
+            <h3>Moteur Complet 1.6L Essence</h3>
+            <p>Puissant et économique, idéal pour véhicules compacts.</p>
+            <p class="prix">850 $</p>
+            <button onclick="ajouterAuPanier('Moteur 1.6L Essence', 850000)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit">
+            <img src="images/culasse.jpg" alt="Culasse aluminium">
+            <h3>Culasse Aluminium 16 soupapes</h3>
+            <p>Pour moteurs modernes avec injection multipoint.</p>
+            <p class="prix">230 $</p>
+            <button onclick="ajouterAuPanier('Culasse 16 soupapes', 230000)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit">
+            <img src="images/piston.jpg" alt="Kit piston segments">
+            <h3>Kit Piston + Segments Ø78mm</h3>
+            <p>Adapté aux moteurs essence standards.</p>
+            <p class="prix">95 $</p>
+            <button onclick="ajouterAuPanier('Kit piston Ø78mm', 95000)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit">
+            <img src="images/embrayage.jpg" alt="Kit embrayage">
+            <h3>Kit Embrayage Renault Clio</h3>
+            <p>Haute résistance, 3 pièces : disque, mécanisme et butée.</p>
+            <p class="prix">120 $</p>
+            <button onclick="ajouterAuPanier('Kit Embrayage Clio', 120000)">Ajouter au panier</button>
+        </div>
+
+    </div>
+</main>
+
+    <script src="/Projet/Java-script/script.js"></script>
+</body>
+</html>

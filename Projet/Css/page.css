@@ -1,0 +1,132 @@
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header.accueil {
+      background-color: #142947;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      width: 120px;
+    }
+
+    .navbar {
+      display: flex;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 4px 0;
+    }
+
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .categories, .meilleures-ventes, .raison {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card, .product-card, .carte {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    .boutton {
+      background: #142947;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+      cursor: pointer;
+    }
+
+    .texte-presentation {
+      margin-top: 2rem;
+    }
+
+    footer {
+      background: #142947;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        display: none;
+        flex-direction: column;
+        background: #142947;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+      }
+
+      .navbar.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
