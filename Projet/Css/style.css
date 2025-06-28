@@ -27,8 +27,6 @@ header.accueil {
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
-
-  
 }
 
 header img {
@@ -149,6 +147,10 @@ header img {
 .boutton:hover {
   background: #0f1d34;
 }
+.boutton a{
+  color: white;
+  text-decoration: none;
+}
 
 /*========================= categories ====================================*/
 
@@ -171,45 +173,49 @@ header img {
     justify-content: center;
 }
 
+.produits-liste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
 .produit {
-    background: #fff;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 15px;
     width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
     text-align: center;
 }
 
 .produit img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
+    width: 50%;
+    border-radius: 8px;
 }
 
 .produit h3 {
-    font-size: 18px;
-    margin: 10px 0 5px;
+    margin: 10px 0;
 }
 
 .produit .prix {
     color: #d62828;
     font-weight: bold;
-    margin: 10px 0;
 }
 
 .produit button {
-    background-color:#142947;
+    background-color: #142947;
     color: white;
-    border: none;
     padding: 8px 16px;
-    font-size: 14px;
+    border: none;
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .produit button:hover {
-    background-color:#0f1d34;
+   background-color: #0f1d34;
 }
 
 /* ======================== Pourquoi nous choisir ======================== */
@@ -289,7 +295,17 @@ footer p {
     color: white;
     font-size: 20px;
     padding-top: 30px;
-    border-bottom: 1px solid #ffffff;
+    
+}
+footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 10px;
 }
 
 /* ======================== Formulaire Contact======================== */
