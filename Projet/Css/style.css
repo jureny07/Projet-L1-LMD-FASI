@@ -18,7 +18,7 @@ img {
 }
 
 /* === Header === */
-header.accueil {
+header {
   background-color: #142947;
   color: white;
   display: flex;
