@@ -52,20 +52,6 @@ header img {
   margin-top: 20vh;
 }
 
-#recherche-produits input {
-  border: 1px solid #aaa;
-  border-radius: 5px;
-}
-
-#resultat .product h3 {
-  font-size: 1.2em;
-  color: #333;
-}
-
-#resultat .product p {
-  color: #555;
-}
-
 /* ================ Navigation ================== */
 .navbar {
   display: flex;
@@ -113,6 +99,7 @@ header img {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  text-align: center;
 }
 
 .card,
@@ -204,6 +191,10 @@ header img {
 
 .produit h3 {
   margin: 10px 0;
+  
+}
+.produits h2{
+  text-align: center;
 }
 
 .produit .prix {
@@ -320,7 +311,7 @@ footer ul li a {
   margin: 50px;
 }
 
-/* ======================== Formulaire Contact======================== */
+/* ========================  Contact======================== */
 .contact {
   max-width: 800px;
   margin: 30px auto;
@@ -348,6 +339,9 @@ p {
   text-decoration: none;
   color: rgb(255, 0, 0);
   font-weight: bold;
+}
+.container h2{
+  text-align: center;
 }
 
 /*========================fiche product============================*/
